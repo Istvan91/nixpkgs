@@ -451,6 +451,7 @@ let
           "Multicast"
           "AllMulticast"
           "Unmanaged"
+          "Group"
           "RequiredForOnline"
           "ActivationPolicy"
         ])
@@ -460,6 +461,7 @@ let
         (assertValueOneOf "Multicast" boolValues)
         (assertValueOneOf "AllMulticast" boolValues)
         (assertValueOneOf "Unmanaged" boolValues)
+        (assertRange "Group" 0 2147483647)
         (assertValueOneOf "RequiredForOnline" (boolValues ++ [
           "missing"
           "off"
