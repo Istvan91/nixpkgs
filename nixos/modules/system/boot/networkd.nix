@@ -730,6 +730,7 @@ let
           "UseAddress"
           "UseDNS"
           "UseNTP"
+          "UseHostname"
           "RouteMetric"
           "RapidCommit"
           "MUDURL"
@@ -748,6 +749,7 @@ let
         (assertValueOneOf "UseAddress" boolValues)
         (assertValueOneOf "UseDNS" boolValues)
         (assertValueOneOf "UseNTP" boolValues)
+        (assertValueOneOf "UseHostname" boolValues)
         (assertInt "RouteMetric")
         (assertValueOneOf "RapidCommit" boolValues)
         (assertValueOneOf "ForceDHCPv6PDOtherInformation" boolValues)
