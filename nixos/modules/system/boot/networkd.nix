@@ -737,6 +737,7 @@ let
           "RequestOptions"
           "SendVendorOption"
           "ForceDHCPv6PDOtherInformation"
+          "UseDelegatedPrefix"
           "PrefixDelegationHint"
           "WithoutRA"
           "SendOption"
@@ -753,6 +754,7 @@ let
         (assertInt "RouteMetric")
         (assertValueOneOf "RapidCommit" boolValues)
         (assertValueOneOf "ForceDHCPv6PDOtherInformation" boolValues)
+        (assertValueOneOf "UseDelegatedPrefix" boolValues)
         (assertValueOneOf "WithoutRA" ["solicit" "information-request"])
         (assertRange "SendOption" 1 65536)
         (assertInt "IAID")
